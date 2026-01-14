@@ -1,0 +1,125 @@
+/* =========================
+   CSS VARIABLES (Color Scheme)
+   ========================= */
+:root {
+  --primary-color: #1f4e79;
+  --secondary-color: #f4f6f8;
+  --accent-color: #ff9800;
+  --text-color: #333;
+}
+
+/* =========================
+   GLOBAL STYLES
+   ========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+/* =========================
+   HEADER & NAVIGATION
+   ========================= */
+header {
+  background-color: var(--primary-color);
+  padding: 1rem;
+}
+
+#course-title {
+  display: block;               /* REQUIRED */
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+/* FLEX NAVIGATION */
+nav {
+  display: flex;                /* REQUIRED */
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* HOVER EFFECT */
+nav a:hover {
+  background-color: var(--accent-color);
+  color: #000;
+  border-radius: 5px;
+}
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
+main {
+  max-width: 1000px;             /* LIMITED WIDTH */
+  margin: 2rem auto;             /* CENTERED */
+  padding: 1rem;
+}
+
+main h1 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 2rem;
+}
+
+/* GRID LAYOUT FOR CARDS */
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* =========================
+   CARD SECTIONS
+   ========================= */
+.card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
