@@ -33,6 +33,7 @@ body {
 header {
   background-color: var(--primary-color);
   padding: 1rem;
+  color: var(--light-color);
 }
 
 #course-title {
