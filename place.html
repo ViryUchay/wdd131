@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Discover Lagos, Nigeria - vibrant culture, beautiful beaches, and the economic heart of West Africa" />
-  <meta name="author" content="Vivian Eze" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Lagos, Nigeria - vibrant culture, beautiful beaches, and the economic heart of West Africa">
+  <meta name="author" content="Vivian Eze">
   <title>Lagos, Nigeria - The Heart of West Africa</title>
-  <link rel="stylesheet" href="place.css" />
-  <script src="place.js" defer></script>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles/place.css">
+  <!-- External JS -->
+  <script src="scripts/place.js" defer></script>
 </head>
 
 <body>
@@ -16,13 +19,15 @@
   </header>
 
   <main>
-    <!-- HERO SECTION -->
     <section class="hero">
-      <img
-        src="images/lagos_nigeria1.webp"
-        alt="Lagos cityscape"
-        loading="eager"
-      />
+      <picture>
+        <!-- Desktop -->
+        <source media="(min-width: 1024px)" srcset="images/lagos_nigeria1.webp">
+        <!-- Tablet -->
+        <source media="(min-width: 768px)" srcset="images/lagos_nigeria1.webp">
+        <!-- Mobile fallback -->
+        <img src="images/lagos_nigeria1.webp" alt="Lagos cityscape" loading="eager">
+      </picture>
 
       <!-- DATA PANEL -->
       <div class="hero-data">
@@ -41,18 +46,19 @@
 
       <!-- WEATHER PANEL -->
       <div class="hero-weather">
-        <h2>Weather</h2>
-        <p>🌤 <strong>28°C</strong></p>
-        <p>Partly Cloudy</p>
-        <p><strong>Wind:</strong> 12 km/h</p>
-        <p><strong>Wind Chill:</strong> 27.8°C</p>
-      </div>
+  <h2>Weather</h2>
+  <div class="weather-icon"></div>
+  <p><strong>28°C</strong></p>
+  <p>Partly Cloudy</p>
+  <p><strong>Wind:</strong> 12 km/h</p>
+  <p><strong>Wind Chill:</strong> 27.8°C</p>
+</div>
     </section>
   </main>
 
   <footer>
     <p>
-      &copy; <span id="currentYear"></span> 🌸 Vivian Eze 🌸 Lagos, Nigeria<br />
+      &copy; <span id="currentYear"></span> 🌸 Vivian Eze 🌸 Lagos, Nigeria<br>
       Last Modification: <span id="lastModified"></span>
     </p>
   </footer>
