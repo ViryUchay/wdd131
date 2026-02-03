@@ -1,0 +1,75 @@
+/* Base page */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+  color: #111;
+}
+
+/* Header */
+header {
+  background-color: #1f3a5f;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Navigation buttons */
+nav {
+  margin-top: 0.5rem;
+}
+
+nav button {
+  background-color: #2d6cdf;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  margin: 0.3rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+nav button:hover {
+  background-color: #1b4fa3;
+}
+
+/* Temple cards grid */
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+  padding: 1rem;
+}
+
+/* Individual card */
+section {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings inside cards */
+section h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Images */
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: #1f3a5f;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
