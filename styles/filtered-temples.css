@@ -19,6 +19,13 @@ nav {
   margin-top: 0.5rem;
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
 nav button {
   background-color: #2d6cdf;
   color: white;
@@ -72,4 +79,10 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  #cards {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
