@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Temple gallery displaying temples with filtering options by age and size.">
+ <meta name="author" content="Vivian Eze">
   <title>Temple Gallery</title>
 
   <link rel="stylesheet" href="styles/filtered-temples.css">
@@ -12,14 +13,15 @@
 <body>
 
 <header>
-  <h1>Temple Gallery</h1>
-  <nav>
-    <button id="home">Home</button>
-    <button id="old">Old</button>
-    <button id="new">New</button>
-    <button id="large">Large</button>
-    <button id="small">Small</button>
-  </nav>
+  <h1>Temple Album</h1>
+ <nav>
+  <a href="#" id="home">Home</a>
+  <a href="#" id="old">Old</a>
+  <a href="#" id="new">New</a>
+  <a href="#" id="large">Large</a>
+  <a href="#" id="small">Small</a>
+</nav>
+
 </header>
 
 <main id="cards"></main>
@@ -29,6 +31,7 @@
   Last Modified: <span id="modified"></span>
 </footer>
 
-<script src="scripts/filtered-temples.js"></script>
+<script src="scripts/filtered-temples.js" defer></script>
+
 </body>
 </html>
