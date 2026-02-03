@@ -3,23 +3,20 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   background-color: #f5f5f5;
-  color: #111;
+  color: #111111;
 }
 
 /* Header */
 header {
   background-color: #1f3a5f;
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding: 1rem;
 }
 
-/* Navigation buttons */
+/* Navigation buttons - CONSOLIDATED */
 nav {
   margin-top: 0.5rem;
-}
-
-nav {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
@@ -28,7 +25,7 @@ nav {
 
 nav button {
   background-color: #2d6cdf;
-  color: white;
+  color: #ffffff;
   border: none;
   padding: 0.6rem 1rem;
   margin: 0.3rem;
@@ -51,11 +48,12 @@ nav button:hover {
 
 /* Individual card */
 section {
-  background: white;
+  background: #ffffff;
   border-radius: 10px;
   padding: 1rem;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  /* Standardized shadow to Hex (approximate) */
+  box-shadow: 0 2px 6px #00000026; 
 }
 
 /* Headings inside cards */
@@ -75,7 +73,7 @@ img {
 /* Footer */
 footer {
   background-color: #1f3a5f;
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding: 1rem;
   margin-top: 1rem;
