@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Required meta tags -->
+  <meta name="description" content="Submit ratings and feedback using this product review form with star ratings, features checklist, and written comments.">
+  <meta name="author" content="Vivian Eze">
+
+  <title>Product Review Form</title>
+
+  <link rel="stylesheet" href="styles/form.css">
+  <script defer src="scripts/form.js"></script>
+</head>
+
+<body>
+  <main class="container">
+    <h1>Product Review</h1>
+
+    <form method="get" action="review.html" id="reviewForm">
+
+      <!-- Product Name -->
+      <label for="product">Product Name</label>
+      <select id="product" name="product" required>
+        <option disabled selected>Select a Product ...</option>
+      </select>
+
+      <!-- Rating -->
+      <fieldset>
+        <legend>Overall Rating</legend>
+
+        <div class="stars">
+          <input type="radio" id="r1" name="rating" value="1" required>
+          <label for="r1">☆</label>
+
+          <input type="radio" id="r2" name="rating" value="2">
+          <label for="r2">☆☆</label>
+
+          <input type="radio" id="r3" name="rating" value="3">
+          <label for="r3">☆☆☆</label>
+
+          <input type="radio" id="r4" name="rating" value="4">
+          <label for="r4">☆☆☆☆</label>
+
+          <input type="radio" id="r5" name="rating" value="5">
+          <label for="r5">☆☆☆☆☆</label>
+        </div>
+      </fieldset>
+
+      <!-- Date -->
+      <label for="date">Date of Installation</label>
+      <input type="date" id="date" name="date" required>
+
+      <!-- Features -->
+      <fieldset>
+        <legend>Useful Features</legend>
+
+        <label><input type="checkbox" id="durability" name="features" value="Durability"> Durability</label>
+        <label><input type="checkbox" id="ease" name="features" value="Ease of Use"> Ease of Use</label>
+        <label><input type="checkbox" id="performance" name="features" value="Performance"> Performance</label>
+        <label><input type="checkbox" id="design" name="features" value="Design"> Design</label>
+      </fieldset>
+
+      <!-- Review -->
+      <label for="review">Written Review (Optional)</label>
+      <textarea id="review" name="review"></textarea>
+
+      <!-- Name -->
+      <label for="username">Your Name (Optional)</label>
+      <input type="text" id="username" name="username">
+
+      <input type="submit" value="Post Review" class="btn">
+    </form>
+  </main>
+
+  <footer>
+    ©2026 Vivian Eze | Last Modified: <span id="lastMod"></span>
+  </footer>
+</body>
+</html>
