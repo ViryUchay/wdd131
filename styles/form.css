@@ -1,0 +1,155 @@
+/* Prevent ALL overflow issues */
+* {
+  box-sizing: border-box;
+}
+
+/* ===============================
+   COLOR THEME
+================================ */
+:root {
+  --primary: #4b003b;   /* purple header/footer */
+  --card: #bfb9bf;      /* light gray card */
+  --input: #e9e9e9;
+  --text: #111;
+}
+
+/* ===============================
+   BASE
+================================ */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eee;
+  color: var(--text);
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;   /* full screen height */
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ===============================
+   HEADER TITLE
+================================ */
+h1 {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin: 0 0 1.5rem 0;
+  font-size: 2rem;
+}
+
+/* ===============================
+   FORM CARD
+================================ */
+form {
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* ===============================
+   LABELS
+================================ */
+label,
+legend {
+  font-weight: bold;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* ===============================
+   INPUTS
+================================ */
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background: var(--input);
+  font-size: 1rem;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* ===============================
+   FIELDSETS
+================================ */
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+/* ===============================
+   STAR RATING
+================================ */
+.stars {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+}
+
+.stars input {
+  display: none;
+}
+
+.stars label {
+  cursor: pointer;
+}
+
+/* ===============================
+   CHECKBOXES
+================================ */
+fieldset label {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+}
+
+/* ===============================
+   BUTTON
+================================ */
+.btn {
+  background: #ddd;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ccc;
+}
+
+/* ===============================
+   FOOTER
+================================ */
+footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+
