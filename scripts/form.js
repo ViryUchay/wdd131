@@ -1,8 +1,8 @@
 const products = [
   { id: 1, name: "Laptop" },
-  { id: 2, name: "Smartphone" },
+  { id: 2, name: "Printer" },
   { id: 3, name: "Tablet" },
-  { id: 4, name: "Headphones" }
+  { id: 4, name: "Phone" }
 ];
 
 const select = document.getElementById("product");
