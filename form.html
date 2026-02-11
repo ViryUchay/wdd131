@@ -23,7 +23,7 @@
       <!-- Product Name -->
       <label for="product">Product Name</label>
       <select id="product" name="product" required>
-        <option disabled selected>Select a Product ...</option>
+        <option disabled selected>Choose a Product ...</option>
       </select>
 
       <!-- Rating -->
@@ -31,20 +31,30 @@
         <legend>Overall Rating</legend>
 
         <div class="stars">
-          <input type="radio" id="r1" name="rating" value="1" required>
-          <label for="r1">☆</label>
+          <div class="star-option">
+            <label for="r1">&#9733;</label>
+            <input type="radio" id="r1" name="rating" value="1" required>
+          </div>
 
-          <input type="radio" id="r2" name="rating" value="2">
-          <label for="r2">☆☆</label>
+          <div class="star-option">
+            <label for="r2">&#9733;&#9733;</label>
+            <input type="radio" id="r2" name="rating" value="2">
+          </div>
 
-          <input type="radio" id="r3" name="rating" value="3">
-          <label for="r3">☆☆☆</label>
+          <div class="star-option">
+            <label for="r3">&#9733;&#9733;&#9733;</label>
+            <input type="radio" id="r3" name="rating" value="3">
+          </div>
 
-          <input type="radio" id="r4" name="rating" value="4">
-          <label for="r4">☆☆☆☆</label>
+          <div class="star-option">
+            <label for="r4">&#9733;&#9733;&#9733;&#9733;</label>
+            <input type="radio" id="r4" name="rating" value="4">
+          </div>
 
-          <input type="radio" id="r5" name="rating" value="5">
-          <label for="r5">☆☆☆☆☆</label>
+          <div class="star-option">
+            <label for="r5">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+            <input type="radio" id="r5" name="rating" value="5">
+          </div>
         </div>
       </fieldset>
 
@@ -54,7 +64,7 @@
 
       <!-- Features -->
       <fieldset>
-        <legend>Useful Features</legend>
+        <legend>Which features did you find useful in the product?<br><em>(Check all that apply)</em></legend>
 
         <label><input type="checkbox" id="durability" name="features" value="Durability"> Durability</label>
         <label><input type="checkbox" id="ease" name="features" value="Ease of Use"> Ease of Use</label>
@@ -63,11 +73,11 @@
       </fieldset>
 
       <!-- Review -->
-      <label for="review">Written Review (Optional)</label>
+      <label for="review">Written Review <span class="optional">(Optional)</span></label>
       <textarea id="review" name="review"></textarea>
 
       <!-- Name -->
-      <label for="username">Your Name (Optional)</label>
+      <label for="username">Your Name <span class="optional">(Optional)</span></label>
       <input type="text" id="username" name="username">
 
       <input type="submit" value="Post Review" class="btn">
@@ -75,7 +85,8 @@
   </main>
 
   <footer>
-    ©2026 Vivian Eze | Last Modified: <span id="lastMod"></span>
+    &#169;2026 Vivian Eze | Lagos, Nigeria<br>
+    Last Modified: <span id="lastMod"></span>
   </footer>
 </body>
 </html>
