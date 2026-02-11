@@ -3,13 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Required meta tags -->
-  <meta name="description" content="Submit ratings and feedback using this product review form with star ratings, features checklist, and written comments.">
+  <meta name="description" content="Product review form with dynamic product selection and validation.">
   <meta name="author" content="Vivian Eze">
-
   <title>Product Review Form</title>
-
   <link rel="stylesheet" href="styles/form.css">
   <script defer src="scripts/form.js"></script>
 </head>
@@ -20,22 +16,19 @@
   </header>
   
   <main class="container">
-
     <form method="get" action="review.html" id="reviewForm">
 
-      <!-- Product Name -->
-<label for="product-list">Choose a Product:</label>
-<select id="product-list" name="product" required>
-  <option value="">Select a Product ...</option>
-  
-  </select>
+      <!-- Product Name (Placeholder) -->
+      <label for="product-list">Product Name</label>
+      <select id="product-list" name="product" required>
+        <option value="" disabled selected>Select a Product ...</option>
+        <!-- JavaScript will inject products here -->
+      </select>
 
-
-      <!-- Rating -->
+      <!-- Rating (All 5 must be 'required') -->
       <fieldset>
         <legend>Overall Rating</legend>
         <div class="stars">
-          <!-- ALL 5 RADIOS  -->
           <div class="star-option">
             <input type="radio" id="r1" name="rating" value="1" required>
             <label for="r1">★</label>
@@ -63,20 +56,19 @@
       <label for="date">Date of Installation</label>
       <input type="date" id="date" name="date" required>
 
-      <!-- Features -->
+      <!-- Features (Label-ID associations) -->
       <fieldset>
         <legend>Which features did you find useful?</legend>
-        
-        <input type="checkbox" id="durability" name="features" value="Durability"> 
+        <input type="checkbox" id="durability" name="features" value="Durability">
         <label for="durability">Durability</label>
 
-        <input type="checkbox" id="ease" name="features" value="Ease of Use"> 
+        <input type="checkbox" id="ease" name="features" value="Ease of Use">
         <label for="ease">Ease of Use</label>
 
-        <input type="checkbox" id="performance" name="features" value="Performance"> 
+        <input type="checkbox" id="performance" name="features" value="Performance">
         <label for="performance">Performance</label>
 
-        <input type="checkbox" id="design" name="features" value="Design"> 
+        <input type="checkbox" id="design" name="features" value="Design">
         <label for="design">Design</label>
       </fieldset>
 
@@ -98,6 +90,3 @@
   </footer>
 </body>
 </html>
-
-
-
