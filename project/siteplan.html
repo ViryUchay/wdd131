@@ -1,282 +1,130 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HelmetCrest Site Plan</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="HelmetCrest site plan outlining purpose, design, color scheme, typography, and responsive wireframes for a professional repair services website.">
+    <meta name="author" content="Vivian Eze">
 
-  <style>
-    /* ===============================
-       GLOBAL STYLES
-    =============================== */
+    <title>HelmetCrest Site Plan</title>
 
-    :root {
-      --primary: #1F3C88;
-      --accent: #FF9800;
-      --light: #F5F5F5;
-      --dark: #333;
-      --white: #fff;
-    }
+    <!-- Google Fonts (with required preconnects) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: "Open Sans", sans-serif;
-      background: var(--light);
-      color: var(--dark);
-      line-height: 1.6;
-    }
-
-    header {
-      background: var(--primary);
-      color: var(--white);
-      padding: 2rem;
-      text-align: center;
-    }
-
-    header h1 {
-      font-family: "Poppins", sans-serif;
-      font-size: 2.2rem;
-    }
-
-    main {
-      max-width: 1100px;
-      margin: auto;
-      padding: 2rem;
-    }
-
-    section {
-      background: var(--white);
-      padding: 2rem;
-      margin-bottom: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    }
-
-    h2 {
-      font-family: "Poppins", sans-serif;
-      color: var(--primary);
-      margin-bottom: 1rem;
-    }
-
-    h3 {
-      margin-top: 1.5rem;
-      color: var(--primary);
-    }
-
-    ul {
-      margin-left: 1.5rem;
-      margin-top: .5rem;
-    }
-
-    /* ===============================
-       COLOR BOXES
-    =============================== */
-
-    .color-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    .color-box {
-      height: 80px;
-      border-radius: 8px;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-    }
-
-    /* ===============================
-       WIREFRAMES
-    =============================== */
-
-    .wireframe {
-      background: #ececec;
-      border: 2px dashed #bbb;
-      padding: 1rem;
-      font-family: monospace;
-      white-space: pre;
-      overflow-x: auto;
-      border-radius: 8px;
-      margin-top: 1rem;
-    }
-
-    /* ===============================
-       TABLES
-    =============================== */
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 1rem;
-    }
-
-    th, td {
-      border: 1px solid #ddd;
-      padding: .6rem;
-      text-align: left;
-    }
-
-    th {
-      background: var(--primary);
-      color: white;
-    }
-
-    footer {
-      background: var(--primary);
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-
-    @media (max-width: 600px) {
-      body {
-        font-size: 14px;
-      }
-    }
-  </style>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles/siteplan.css">
 </head>
+
 
 <body>
 
-<header>
-  <h1>HelmetCrest – Website Site Plan</h1>
-  <p>Your One-Stop Fix-It-All Company</p>
+<!-- ================= HEADER + NAV ================= -->
+<header class="header">
+    <div class="container nav-wrapper">
+
+        <div class="brand">
+            <img src="images/hc_logo.jpg" alt="HelmetCrest Logo" class="logo">
+            <h1>HelmetCrest</h1>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#site-name">Site Name</a></li>
+                <li><a href="#purpose">Purpose</a></li>
+                <li><a href="#scenarios">Scenarios</a></li>
+                <li><a href="#colors">Colors</a></li>
+                <li><a href="#wireframes">Wireframes</a></li>
+            </ul>
+        </nav>
+
+    </div>
 </header>
 
-<main>
+<main class="container">
 
-  <!-- PURPOSE -->
-  <section>
-    <h2>Site Purpose</h2>
-    <p>
-      HelmetCrest provides fast and reliable repair services for homes, electronics, vehicles,
-      and general maintenance. The website will allow customers to explore services,
-      read testimonials, view pricing, learn DIY tips, and book repair appointments online.
-    </p>
-  </section>
+    <!-- SITE NAME -->
+    <section id="site-name">
+        <h2>Site Name</h2>
+        <p><strong>HelmetCrest</strong></p>
+        <p>
+            The name represents protection, reliability, and trust. HelmetCrest stands for dependable repair and maintenance services that protect homes, vehicles, and devices.
+        </p>
+        <p><em>Optional domain:</em> helmetcrest.com</p>
+    </section>
 
-  <!-- AUDIENCE -->
-  <section>
-    <h2>Target Audience</h2>
-    <ul>
-      <li>Homeowners needing repairs</li>
-      <li>Busy professionals seeking quick service</li>
-      <li>Vehicle owners</li>
-      <li>DIY learners</li>
-    </ul>
-  </section>
+    <!-- PURPOSE -->
+    <section id="purpose">
+        <h2>Site Purpose</h2>
+        <p>
+            The website will provide customers with professional repair services for homes, electronics, and vehicles. Users can view service descriptions, pricing, DIY tips, testimonials, and request help quickly through an online form.
+        </p>
+    </section>
 
-  <!-- SITE MAP -->
-  <section>
-    <h2>Site Map</h2>
-    <ul>
-      <li>Home (index.html)</li>
-      <li>Services (services.html)</li>
-      <li>Contact / Booking (contact.html)</li>
-      <li>References (references.html)</li>
-    </ul>
-  </section>
+    <!-- SCENARIOS -->
+    <section id="scenarios">
+        <h2>Scenarios</h2>
+        <ul>
+            <li>How can I book a repair technician today?</li>
+            <li>What are the service prices?</li>
+            <li>Can I fix this problem myself?</li>
+            <li>How do I contact HelmetCrest for emergency help?</li>
+        </ul>
+    </section>
 
-  <!-- COLOR GUIDE -->
-  <section>
-    <h2>Color Scheme</h2>
+    <!-- COLOR SCHEMA -->
+    <section id="colors">
+        <h2>Color Schema</h2>
 
-    <div class="color-grid">
-      <div class="color-box" style="background:#1F3C88">Primary</div>
-      <div class="color-box" style="background:#FF9800">Accent</div>
-      <div class="color-box" style="background:#333">Text</div>
-      <div class="color-box" style="background:#F5F5F5; color:#000">Background</div>
-    </div>
-  </section>
+        <div class="color-row">
+            <div class="color-box primary"></div>
+            <p>Primary Blue – headings, header, footer</p>
+        </div>
 
-  <!-- TYPOGRAPHY -->
-  <section>
-    <h2>Typography</h2>
-    <table>
-      <tr><th>Element</th><th>Font</th><th>Use</th></tr>
-      <tr><td>Headings</td><td>Poppins</td><td>Bold titles</td></tr>
-      <tr><td>Body</td><td>Open Sans</td><td>Paragraphs</td></tr>
-      <tr><td>Buttons</td><td>Poppins Semi-Bold</td><td>Calls to action</td></tr>
-    </table>
-  </section>
+        <div class="color-row">
+            <div class="color-box secondary"></div>
+            <p>Accent Yellow – buttons and highlights</p>
+        </div>
+    </section>
 
-  <!-- WIREFRAMES -->
-  <section>
-    <h2>Wireframes</h2>
+    <!-- TYPOGRAPHY -->
+    <section>
+        <h2>Typography</h2>
+        <p><strong>Poppins:</strong> Headings</p>
+        <p><strong>Open Sans:</strong> Body text</p>
+    </section>
 
-    <h3>Home Page</h3>
+    <!-- WIREFRAMES -->
+   <section id="wireframes">
+  <h2>Wireframe Diagram</h2>
+
+  <div class="wireframe-grid">
+
     <div class="wireframe">
-HEADER | NAV
-HERO IMAGE + TAGLINE + BUTTON
-SERVICES (3 CARDS GRID)
-TESTIMONIALS
-DIY TIPS
-FOOTER + REFERENCES
+      <h3>Mobile View</h3>
+      <img src="images/wireframe_mobile.webp" alt="Mobile wireframe">
+      <p>Figure 1: Homepage mobile layout</p>
     </div>
 
-    <h3>Services Page</h3>
     <div class="wireframe">
-HEADER | NAV
-PAGE TITLE
-HOME REPAIRS CARDS
-ELECTRONICS CARDS
-VEHICLE CARDS
-PRICING TABLE
-FOOTER
+      <h3>Desktop View</h3>
+      <img src="images/desktop_wireframe.webp" alt="Desktop wireframe">
+      <p>Figure 2: Homepage desktop layout</p>
     </div>
 
-    <h3>Contact Page</h3>
-    <div class="wireframe">
-HEADER | NAV
-BOOK SERVICE FORM
-NAME | EMAIL | SERVICE | MESSAGE
-SUBMIT BUTTON
-CONFIRMATION MESSAGE
-FOOTER
-    </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ACCESSIBILITY -->
-  <section>
-    <h2>Accessibility Plan</h2>
-    <ul>
-      <li>Semantic HTML elements</li>
-      <li>Alt text for images</li>
-      <li>High contrast colors</li>
-      <li>Form labels</li>
-      <li>Mobile responsive layout</li>
-    </ul>
-  </section>
-
-  <!-- JAVASCRIPT PLAN -->
-  <section>
-    <h2>JavaScript Features Plan</h2>
-    <ul>
-      <li>Service filter with arrays</li>
-      <li>Booking form validation</li>
-      <li>Testimonials rotator</li>
-      <li>localStorage to store submissions</li>
-      <li>Dynamic DOM updates using template literals</li>
-    </ul>
-  </section>
-
+   
+       
 </main>
 
-<footer>
-  HelmetCrest Site Plan | WDD131 Project
+<footer class="footer">
+    © 2026 HelmetCrest |Your One-Stop Fix-It-All Company
 </footer>
 
 </body>
