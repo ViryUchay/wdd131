@@ -9,6 +9,8 @@
   <title>HelmetCrest | Home, Electronics & Vehicle Repair Services</title>
 
   <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap" as="style">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
 
@@ -17,6 +19,8 @@
 
   <!-- JS -->
   <script src="scripts/main.js" defer></script>
+  <link rel="icon" href="images/favicon.ico">
+
 </head>
 
 
@@ -31,7 +35,10 @@
   <div class="container nav-wrapper">
     <h1 class="logo">HelmetCrest</h1>
 
-    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+   <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+  ☰
+</button>
+
 
     <nav class="nav-menu" aria-label="Primary navigation">
       <ul class="nav">
@@ -130,12 +137,12 @@
   <div class="container">
     <h2 class="section-title">What Our Customers Say</h2>
 
-    <div class="testimonial">
-      <p id="testimonial-text">
-        HelmetCrest fixed my home appliances quickly and professionally!
-      </p>
-      <h4 id="testimonial-name">— Sarah Johnson</h4>
-    </div>
+   <div class="testimonial">
+  <p id="testimonial-text">
+    HelmetCrest fixed my home appliances quickly and professionally!
+  </p>
+  <p id="testimonial-name"><strong>— Sarah Johnson</strong></p>
+</div>
   </div>
 </section>
 
@@ -160,9 +167,11 @@
 <footer class="footer">
   <p>© 2026 HelmetCrest. All rights reserved.</p>
   <a href="references.html">References</a>
-  <button id="topBtn" class="btn">Back to Top</button>
+ <button id="topBtn" class="btn" aria-label="Back to top of page">Back to Top</button>
+
 </footer>
 
 </body>
 </html>
+
 
