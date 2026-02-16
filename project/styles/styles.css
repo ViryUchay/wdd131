@@ -342,3 +342,24 @@ h1, h2, h3 {
   color: var(--text);
 }
 
+/* Hide the skip link visually by default */
+.skip-link {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Show it only when someone tabs to it with a keyboard */
+.skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+}
+
