@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Vivian Eze" />
+  <meta name="description" content="HelmetCrest offers trusted home, electronics, and vehicle repair services with fast and affordable solutions." />
+
+  <title>HelmetCrest | Home, Electronics & Vehicle Repair Services</title>
+
+  <!-- Google Fonts (preload for performance) -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <!-- JS -->
+  <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+<!-- Skip navigation (Accessibility ⭐) -->
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="container nav-wrapper">
+    <h1 class="logo">HelmetCrest</h1>
+
+    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+
+    <nav class="nav-menu" aria-label="Primary navigation">
+      <ul class="nav">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" role="banner">
+  <img 
+    src="images/hero.webp" 
+    alt="Professional technician repairing equipment"
+    class="hero-img"
+    fetchpriority="high"
+  />
+
+  <div class="hero-overlay">
+    <div class="container hero-content">
+      <h2>Your One-Stop Fix-It-All Company</h2>
+      <p>
+        Reliable home, electronics, and vehicle repairs delivered fast by trusted professionals.
+      </p>
+
+      <a href="contact.html" class="btn">Book a Service</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MAIN ================= -->
+<main id="main">
+
+<!-- ABOUT -->
+<section class="section light">
+  <div class="container">
+    <h2 class="section-title">About HelmetCrest</h2>
+
+    <p class="center">
+      HelmetCrest simplifies everyday repairs for busy people by combining skilled technicians, transparent pricing, and fast service for homes, vehicles, and electronics.
+    </p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="grid-3">
+
+      <article class="card">
+        <img src="images/home_repair.webp" alt="Home repair tools" loading="lazy">
+        <h3>Home Repairs</h3>
+        <p>Plumbing, carpentry, painting, and installations.</p>
+      </article>
+
+      <article class="card">
+        <img src="images/laptop_repair.webp" alt="Laptop repair technician" loading="lazy">
+        <h3>Electronics</h3>
+        <p>Phones, laptops, TVs, and small appliances.</p>
+      </article>
+
+      <article class="card">
+        <img src="images/car_repair.webp" alt="Vehicle service" loading="lazy">
+        <h3>Vehicles</h3>
+        <p>Diagnostics, battery replacement, and maintenance.</p>
+      </article>
+
+    </div>
+
+    <div class="center">
+      <a href="services.html" class="btn secondary">View All Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section light">
+  <div class="container">
+    <h2 class="section-title">Why Choose HelmetCrest?</h2>
+
+    <ul class="features">
+      <li>✔ Certified technicians</li>
+      <li>✔ Affordable pricing</li>
+      <li>✔ Fast service</li>
+      <li>✔ Satisfaction guaranteed</li>
+    </ul>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">What Our Customers Say</h2>
+
+    <div class="testimonial">
+      <p id="testimonial-text">
+        HelmetCrest fixed my home appliances quickly and professionally!
+      </p>
+      <h4 id="testimonial-name">— Sarah Johnson</h4>
+    </div>
+  </div>
+</section>
+
+<!-- DIY -->
+<section class="section light">
+  <div class="container">
+    <h2 class="section-title">Quick DIY Tips</h2>
+
+    <div class="grid-3">
+      <div class="tip">Turn off water supply before fixing leaks.</div>
+      <div class="tip">Clean vents to prevent overheating.</div>
+      <div class="tip">Check tire pressure monthly.</div>
+    </div>
+
+    <p id="randomTip" class="center"></p>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <p>© 2026 HelmetCrest. All rights reserved.</p>
+  <a href="references.html">References</a>
+  <button id="topBtn" class="btn">Back to Top</button>
+</footer>
+
+</body>
+</html>

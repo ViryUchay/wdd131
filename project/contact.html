@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HelmetCrest | Contact</title>
+
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container nav-wrapper">
+    <h1 class="logo">HelmetCrest</h1>
+
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main><section class="contact-section">
+  <center><h2>Book a Service</h2></center>
+
+  <div class="contact-container">
+    <form id="contactForm" class="contact-form">
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="service">Service Needed</label>
+      <select id="service" name="service" required>
+        <option value="">Select a Service</option>
+        <option>Home Repairs</option>
+        <option>Electronics</option>
+        <option>Vehicle Repair</option>
+        <option>General Maintenance</option>
+      </select>
+
+      <label for="message">Describe Your Issue</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit" class="btn-primary">Submit Request</button>
+
+    </form>
+  </div>
+</section>
+
+
+
+</main>
+  
+
+<footer class="footer">
+  <p>© 2026 HelmetCrest</p>
+  <a href="references.html">References</a>
+</footer>
+
+</body>
+</html>
