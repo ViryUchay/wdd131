@@ -15,11 +15,13 @@
 <header class="header">
   <div class="container nav-wrapper">
     <h1 class="logo">HelmetCrest</h1>
+
     <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
     <nav class="nav-menu">
       <ul class="nav">
         <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -27,21 +29,60 @@
 </header>
 
 <main>
+
+  <!-- ===============================
+       HERO SECTION
+  ================================ -->
+  
+<!-- HERO SECTION -->
+<section class="hero service-hero">
+
+  <!-- IMAGE PLACEHOLDER -->
+  <img src="images/service_hero.webp" alt="HelmetCrest Services" class="hero-image">
+
+  <!-- HERO CONTENT -->
+  <div class="container hero-content">
+    <h1>Professional Repair Services</h1>
+    <p>
+      Fast, reliable and affordable solutions for your home,
+      electronics, and vehicle needs.
+    </p>
+    <a href="contact.html" class="btn">Book a Service</a>
+  </div>
+
+</section>
+
+
+  <!-- ===============================
+       SERVICES SECTION
+  ================================ -->
   <section class="section">
     <div class="container">
+
       <h2 class="section-title">Our Services</h2>
 
-      <div class="grid-3">
+      <!-- Filter Buttons -->
+      <div class="filters center">
         <button class="btn filter-btn" data-type="All">All</button>
         <button class="btn filter-btn" data-type="Home">Home</button>
         <button class="btn filter-btn" data-type="Electronics">Electronics</button>
         <button class="btn filter-btn" data-type="Vehicle">Vehicle</button>
       </div>
 
-      <div id="serviceGrid" class="grid-3 section"></div>
-    </div> </section> <section class="section light">
+      <!-- JS inserts service cards here -->
+      <div id="serviceGrid" class="grid-3"></div>
+
+    </div>
+  </section>
+
+
+  <!-- ===============================
+       PRICING SECTION
+  ================================ -->
+  <section class="section light">
     <div class="container center">
       <h2 class="section-title">Pricing Guide</h2>
+
       <table class="pricing-table">
         <thead>
           <tr>
@@ -68,7 +109,12 @@
           </tr>
         </tbody>
       </table>
-    </div> </section> </main>
+
+    </div>
+  </section>
+
+</main>
+
 
 <footer class="footer">
   <p>© 2026 HelmetCrest</p>
